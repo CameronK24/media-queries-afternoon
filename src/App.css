@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  height: 100vh;
+  width: 99vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.897)), url('./img/bg-masthead.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(192, 192, 192);
   display: flex;
   flex-direction: column;
+}
+
+.nav-header {
+  width: 99vw;
+  height: 9vh;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-header p {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: left;
+  letter-spacing: 1.5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-bar {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  letter-spacing: 1px;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.mobile-nav-menu {
+  display: none;
+}
+
+.section-1 {
+  height: 10vh;
+  width: 99vw;
+  background: black;
+}
+
+@media(max-width: 991px) {
+  header {
+    height: 80vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-header {
+    height: 8vh;
+    background-color: white;
+    color: black;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .dropdown-menu {
+    margin-left: 20%;
+    display: initial;
+    border: 1px solid cadetblue;
+    padding: 12px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    color: cadetblue;  
+    display: flex;  
+  }
+
+  .menu-line-location {
+    margin-left: 2px;
+  }
+
+  .menu-line {
+    width: 12px;
+    height: 2px;
+    background-color: cadetblue;
+    margin: 2px;
+  }
+
+  .mobile-nav-menu {
+    display: initial;
+    margin-top: 8vh;
+    width: 99vw;
+    height: 125px;
+    background-color: white;
+    letter-spacing: 1.5px;
+    color: rgb(133, 133, 133);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .mobile-nav-menu span {
+    margin-left: 15%;
+    cursor: pointer;
+  }
+
+  .mobile-nav-menu span:hover {
+    color: rgb(83, 83, 83);
+  }
+
+  .section-1 {
+    height: 20vh;
   }
 }
