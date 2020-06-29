@@ -19,18 +19,18 @@ class App extends Component {
       <div className="App">
         <header>
           <div className='nav-header'>
-            <p>Start Bootstrap</p>
+            <h1>Start Bootstrap</h1>
             <nav className='nav-bar'>
               <span>About</span>
               <span>Projects</span>
               <span>Contact</span>
             </nav>
             <div className='dropdown-menu' onClick={this.toggleDropdownMenu}>Menu
-            <div className='menu-line-location'>
-              <div className='menu-line'></div>
-              <div className='menu-line'></div>
-              <div className='menu-line'></div>
-            </div>
+              <div className='menu-line-location'>
+                <div className='menu-line'></div>
+                <div className='menu-line'></div>
+                <div className='menu-line'></div>
+              </div>
             </div>         
           </div>
           {this.state.dropdownView
@@ -43,6 +43,11 @@ class App extends Component {
               )
               : null
             }
+          <section className='page-info'>
+            <h2>GRAYSCALE</h2>
+            <p>A free, responsive, one page Bootstrap theme created by Start Bootstrap.</p>
+            <h3 className='get-started-btn'>GET STARTED</h3>
+          </section>
         </header>
         <section className='section-1'>
 
